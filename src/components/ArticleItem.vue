@@ -14,6 +14,7 @@
 </script>
 <style lang="scss" scoped>
     .article {
+        margin: 20px 0 40px 0;
         width: 300px;
         height: 300px;
         position: relative;

@@ -67,7 +67,7 @@
   }
 
   .footerItem {
-    padding: 20px 10px;
+    padding: 30px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
