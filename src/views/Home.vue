@@ -46,14 +46,13 @@
   }
 
   .containerProducts {
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 940px;
     width: 100%;
     height: fit-content;
-    margin: auto;
+    margin: 20px auto auto auto;
     padding-bottom: 40px;
 
     & > .products {
