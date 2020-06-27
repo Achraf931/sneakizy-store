@@ -1,5 +1,5 @@
 <template>
-    <router-link :to="{name: 'product', params: {id: product.id}}" class="product boxShadow">
+    <a :href="'https://sneakizy.herokuapp.com/products/' + product.id" target="_blank" class="product boxShadow">
         <div>
             <div class="brandImage">
                 <div>
@@ -15,16 +15,13 @@
         <div class="productImage">
             <img :src="product.image" :alt="product.name">
         </div>
-    </router-link>
+    </a>
 </template>
 <script>
     export default {
         data() {
             return {
-                brand: '',
-                size: '39',
-                show: false,
-                quantity: ''
+                brand: ''
             }
         },
         props: ['product', 'brands'],
@@ -34,15 +31,6 @@
                     this.brand = brand
                 }
             })
-        },
-        methods: {
-            addToBasket() {
-                this.$store.dispatch('basket/AddProductToBasket', {
-                    product: this.product,
-                    quantity: 1,
-                    size: this.size
-                })
-            }
         }
     }
 </script>
