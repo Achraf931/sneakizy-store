@@ -27,7 +27,7 @@
     .article {
         max-width: 1500px;
         width: 100%;
-        margin: auto;
+        margin: 20px 0 80px 0!important;
         padding: 0 100px 40px 100px;
 
         .marginBottom {

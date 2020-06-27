@@ -14,6 +14,7 @@
     <footer class="footer">
       <router-link :to="'/'" class="footerItem">Home</router-link>
       <router-link :to="{name: 'catalog'}" class="footerItem">Catalogue</router-link>
+      <router-link :to="{name: 'news'}" class="footerItem">News</router-link>
       <router-link :to="{name: 'contact'}" class="footerItem">Contact</router-link>
     </footer>
   </div>
@@ -179,6 +180,7 @@
   }
 
   footer {
+    z-index: 100;
     background: #591df1;
     color: #f5f4fa;
   }

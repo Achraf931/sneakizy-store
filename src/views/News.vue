@@ -1,5 +1,5 @@
 <template>
-    <div class="news animation">
+    <div class="news">
         <ArticleItem v-for="article in articles" :key="article.id" :article="article"/>
     </div>
 </template>
@@ -23,11 +23,6 @@
     }
 </script>
 <style lang="scss" >
-    .animation {
-        display: none;
-        opacity: 0;
-        transition: opacity .5s;
-    }
     .news {
         padding-bottom: 40px;
         display: grid;
